@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  mongo:
+    container_name: mongo
+    restart: unless-stopped
+    hostname: db.mongo
+    image: mongo
+    volumes:
+      - '../db:/data/db:consistent'
+    ports:
+      - "27017:1324"
+    networks:
+      - app-network  
+networks:
+  app-network:
+    driver: bridge
