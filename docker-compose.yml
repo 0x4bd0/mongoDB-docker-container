@@ -9,7 +9,7 @@ services:
     volumes:
       - '../db:/data/db:consistent'
     ports:
-      - "27017:1324"
+      - "27017:27017"
     networks:
       - app-network  
 networks:
