@@ -2,3 +2,4 @@
 
 # START IT :
 
+' docker-compose up -d ' 
